@@ -1,0 +1,367 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  font-family: "Poppins";
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body 
+
+{
+  color: #063564;
+  font-size: 1rem;
+  line-height: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+/* -------------top header section---------- */
+
+.container {
+  display: flex;
+  gap: 2rem;
+  background-color: #ffdeeb;
+  border-radius: 15px;
+  margin: 5rem 0;
+  padding: 1rem 2rem;
+}
+
+.container .half-width {
+  width: 50%;
+}
+.container .half-width img {
+  max-width: 100%;
+}
+.container .half-width:hover img {
+  animation: names 2s ease-in;
+}
+
+.link {
+  display: inline-block;
+  background-color: #f03e3e;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 1s ease-in-out;
+}
+
+.link span {
+  margin-left: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #181b1f;
+
+}
+
+
+
+
+
+/* -----------aside (navbar)------- */
+aside {
+  background-color: #212529;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+.navbar ul li {
+  list-style: none;
+}
+.link {
+  background-color: white;
+  color: #343a40;
+  margin: 1rem;
+  width: 220px;
+}
+#lnk {
+  background-color: #f03e3e;
+  color: white;
+}
+/* ----------------------------------- */
+
+
+
+
+/* -----------style aside and games also------- */
+.all-content {
+  display: flex;
+  gap: 2rem;
+  margin: 5rem 0;
+  /* align-items: center; */
+}
+
+.games {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.games-details {
+  box-shadow: 2px 2px 12px #dadee2;
+  border-radius: 12px;
+  background-color: #dadee2;
+  padding: 1rem;
+}
+.games-details h4 {
+  margin-bottom: 0.8rem;
+}
+.icons {
+  display: flex;
+  gap: 2rem;
+  opacity: 0.75;
+  margin-right: 0.8rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  margin: 0.8rem;
+}
+
+
+/* --------------------------------------- */
+
+
+
+
+
+
+
+/* --------btn secrate-------- */
+.scrt {
+  display: none;
+}
+/* -----------footer------------ */
+.ftr {
+  background-color: #212529;
+  color: white;
+  padding: 5rem;
+  text-align: center;
+}
+hr {
+  margin: 3rem;
+  opacity: 0.25;
+  max-width: 900px;
+}
+.ftr-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ftr-nav ul li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+/* ------------------------------ */
+/* --------Social Icons------------ */
+.s-icon ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
+}
+.s-icon a {
+  background-color: rgb(255, 255, 255);
+  padding: 0.8rem;
+  border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+/* ------------------football website------------- */
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.flags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flags img {
+  border-radius: 0;
+}
+
+.time-of-games {
+  opacity: 0.75;
+}
+
+
+
+
+
+
+/*-------------- phone device responsive------------ */
+@media screen and (max-width: 576px) {
+  /* -----header------ */
+
+  .container {
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 1rem;
+  }
+  .container .half-width {
+    width: 100%;
+  }
+  .link {
+    padding: 0.5rem 1rem;
+
+    margin: 1rem 0;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* -------------------- */
+  /* -----------aside-----------
+  
+  
+  
+  ------- */
+  .all-content {
+    display: flex;
+    flex-direction: column;
+  }
+  aside {
+    background-color: white;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 5rem;
+  }
+  .nav-link {
+    border: 1px solid gray;
+    padding: 1rem 2rem;
+  }
+  .games {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .games-details {
+    width: 100%;
+  }
+  .games-details img {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* --------btn secrate-------- */
+.scrt {
+  display: none;
+}
+/* -----------footer------------ */
+.ftr {
+  background-color: #212529;
+  color: white;
+  padding: 5rem;
+  text-align: center;
+}
+hr {
+  margin: 3rem;
+  opacity: 0.25;
+  max-width: 900px;
+}
+.ftr-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ftr-nav ul li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+
+
+
+/* ------------tab device responsive --------------*/
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .games {
+    display: grid;
+   
+  }
+  aside {
+    background-color: white;
+  }
+  .all-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .scrt {
+    display: block;
+    background-color: #580d03;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    color: white;
+    font-weight: 1500;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar ul li a {
+    border: 1px solid gray;
+  }
+}
+
+}
+
+
+
+
